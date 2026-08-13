@@ -59,13 +59,45 @@
         }
 
         .hero h1 {
-            color: white;
             font-size: 48px;
             margin-bottom: 15px;
+
+            background: linear-gradient(90deg,
+                    #ff0000,
+                    #ff7300,
+                    #ffff00,
+                    #00ff00,
+                    #00ffff,
+                    #008cff,
+                    #7a00ff,
+                    #ff00c8,
+                    #ff0000);
+
+            background-size: 400% 100%;
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+
+            animation: rgbText 6s linear infinite;
+
             text-shadow:
-                0 0 10px #4da6ff,
-                0 0 20px #4da6ff,
-                0 0 40px #4da6ff;
+                0 0 10px rgba(255, 0, 255, 0.5),
+                0 0 20px rgba(0, 255, 255, 0.4),
+                0 0 40px rgba(0, 128, 255, 0.3);
+        }
+
+        @keyframes rgbText {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
         }
 
         .hero p {
@@ -97,6 +129,23 @@
             box-shadow: 0 0 20px #4da6ff;
         }
 
+        .getkey-btn {
+            background: #ef4444;
+            margin-top: 15px;
+        }
+
+        .getkey-btn:hover {
+            box-shadow: 0 0 20px #ef4444;
+        }
+
+        .topup-btn {
+            background: #f97316;
+        }
+
+        .topup-btn:hover {
+            box-shadow: 0 0 20px #f97316;
+        }
+
         @media(max-width:700px) {
             .hero h1 {
                 font-size: 35px;
@@ -114,6 +163,11 @@
                 transform: translateY(0);
             }
         }
+
+        .box a {
+            color: rgb(2, 247, 255);
+            text-decoration: none;
+        }
     </style>
 </head>
 
@@ -123,7 +177,7 @@
 
         <h1>Roblox Script Lua Free</h1>
 
-        <p>Free Roblox Lua Scripts & Tools</p>
+        <p>Free Scripts & Tools</p>
 
         <!-- ปุ่มลิงก์ดาวน์โหลด -->
         <a href="https://www.mediafire.com/folder/02b5lzwoo7bpq/All+Executer" class="hero-btn" target="_blank"
@@ -131,46 +185,41 @@
             Download ตัวรันมือถือ
         </a>
 
+        <!-- ปุ่ม Getkey delta -->
+        <a href="https://discord.gg/ej4rPPzDPQ" class="hero-btn getkey-btn" target="_blank" rel="noopener noreferrer">
+            Discord หาคีย์ตัวรัน
+        </a>
+
+
+        <a href="https://khanthep.in.th/" class="hero-btn topup-btn" target="_blank" rel="noopener noreferrer">
+            แหล่งเติมเกมถูกๆ
+        </a>
     </section>
 
     <main>
 
         <div class="content">
-            <h2>1.Script wait update...</h2>
+            <h2>1. โปรแกรมเขียนCode Website บนมือถือ - Code Editor</h2>
         </div>
 
         <div class="box">
-            <p>
-                N/A
-            </p>
+            <a href="https://liteapks.com/code-editor-compiler-ide.html" target="_blank">
+                https://liteapks.com/code-editor-compiler-ide.html
+            </a>
         </div>
+
+
         <div class="content">
-            <h2>2.Script wait update...</h2>
+            <h2>2. Terminal App บนมือถือ - Termux</h2>
         </div>
 
         <div class="box">
-            <p>
-                N/A
-            </p>
-        </div>
-        <div class="content">
-            <h2>3.Script wait update...</h2>
+            <a href="https://play.google.com/store/apps/details?id=com.termux" target="_blank">
+                https://play.google.com/store/apps/details?id=com.termux
+            </a>
         </div>
 
-        <div class="box">
-            <p>
-                N/A
-            </p>
-        </div>
-        <div class="content">
-            <h2>4.Script wait update...</h2>
-        </div>
 
-        <div class="box">
-            <p>
-                N/A
-            </p>
-        </div>
 
 
 
