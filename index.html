@@ -112,9 +112,12 @@
         }
 
         .hero-btn {
-            display: inline-block;
-            margin-top: 30px;
-            padding: 14px 35px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 180px;
+            box-sizing: border-box;
+            padding: 14px 25px;
             background: #4da6ff;
             color: white;
             text-decoration: none;
@@ -122,6 +125,7 @@
             font-weight: bold;
             transition: .3s;
             cursor: pointer;
+            margin-top: 0;
         }
 
         .hero-btn:hover {
@@ -129,9 +133,21 @@
             box-shadow: 0 0 20px #4da6ff;
         }
 
+        .hero-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .hero-buttons .new-row {
+            flex-basis: 100%;
+            height: 0;
+        }
+
         .getkey-btn {
             background: #ef4444;
-            margin-top: 15px;
+            margin-top: 0;
         }
 
         .getkey-btn:hover {
@@ -144,6 +160,14 @@
 
         .topup-btn:hover {
             box-shadow: 0 0 20px #f97316;
+        }
+
+        .buymaru-btn {
+            background: #bcfd0a9c;
+        }
+
+        .buymaru-btn:hover {
+            box-shadow: 0 0 20px #bcfd0a9c;
         }
 
         @media(max-width:700px) {
@@ -177,29 +201,43 @@
 
         <h1>Roblox Script Lua Free</h1>
 
-        <p>Free Scripts & Tools</p>
+        <div class="hero-buttons">
 
-        <!-- ปุ่มลิงก์ดาวน์โหลด -->
-        <a href="https://www.mediafire.com/folder/02b5lzwoo7bpq/All+Executer" class="hero-btn" target="_blank"
-            rel="noopener noreferrer">
-            Download ตัวรันมือถือ
-        </a>
+            <a href="https://www.mediafire.com/folder/02b5lzwoo7bpq/All+Executer" class="hero-btn" target="_blank"
+                rel="noopener noreferrer">
+                Download ตัวรันมือถือ
+            </a>
 
-        <!-- ปุ่ม Getkey delta -->
-        <a href="https://discord.gg/ej4rPPzDPQ" class="hero-btn getkey-btn" target="_blank" rel="noopener noreferrer">
-            Discord หาคีย์ตัวรัน
-        </a>
+            <a href="https://discord.gg/ej4rPPzDPQ" class="hero-btn getkey-btn" target="_blank"
+                rel="noopener noreferrer">
+                Discord หาคีย์ตัวรัน
+            </a>
 
+            <a href="https://discord.com/invite/maruhub" class="hero-btn buymaru-btn" target="_blank"
+                rel="noopener noreferrer">
+                ซื้อ Script maru
+            </a>
 
-        <a href="https://khanthep.in.th/" class="hero-btn topup-btn" target="_blank" rel="noopener noreferrer">
-            แหล่งเติมเกมถูกๆ
-        </a>
+            <a href="https://khanthep.in.th/" class="hero-btn topup-btn" target="_blank" rel="noopener noreferrer">
+                แหล่งเติมเกมถูกๆ
+            </a>
+
+            <!-- บังคับขึ้นบรรทัดใหม่ -->
+            <div class="new-row"></div>
+
+            <!-- ปุ่มที่ 5 -->
+            <a href="https://play.google.com/store/apps/details?id=com.tykeji.ugphone&referrer=adjust_reftag%3DckMce5D6Qg8Ec%26utm_source%3D%25E5%25AE%2598%25E7%25BD%2591%2BGooogle%2BPlay%26utm_campaign%3DGooogle%2BPlay" class="hero-btn" target="_blank" rel="noopener noreferrer">
+              โปรแกรมจำลอง Android
+            </a>
+
+        </div>
+
     </section>
 
     <main>
 
         <div class="content">
-            <h2>1. โปรแกรมเขียนCode Website บนมือถือ - Code Editor</h2>
+            <h2>1. AppเขียนCode Website บนมือถือ - Code Editor</h2>
         </div>
 
         <div class="box">
@@ -210,12 +248,23 @@
 
 
         <div class="content">
-            <h2>2. Terminal App บนมือถือ - Termux</h2>
+            <h2>2. Appterminal บนมือถือ - Termux</h2>
         </div>
 
         <div class="box">
             <a href="https://play.google.com/store/apps/details?id=com.termux" target="_blank">
                 https://play.google.com/store/apps/details?id=com.termux
+            </a>
+        </div>
+
+        <div class="content">
+            <h2>3. AppเขียนCodeได้หลายภาษาบนมือถือ - Spck Editor
+            </h2>
+        </div>
+
+        <div class="box">
+            <a href="https://play.google.com/store/apps/details?id=io.spck" target="_blank">
+                https://play.google.com/store/apps/details?id=io.spck
             </a>
         </div>
 
