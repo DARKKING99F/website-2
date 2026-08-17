@@ -233,6 +233,8 @@
             }
         }
 
+
+
         @keyframes fadeIn {
             from {
                 opacity: 0;
@@ -249,14 +251,161 @@
             color: rgb(2, 247, 255);
             text-decoration: none;
         }
+
+        .announcement {
+            width: 90%;
+            max-width: 900px;
+            margin: 0 auto 30px;
+            padding: 15px;
+            box-sizing: border-box;
+            background: rgba(255, 255, 255, 0.12);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 12px;
+            color: white;
+            text-align: center;
+            backdrop-filter: blur(12px);
+        }
+
+        #loading-screen {
+            position: fixed;
+            inset: 0;
+            background: #020617;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            color: white;
+            font-size: 20px;
+        }
+
+        .loader {
+            width: 40px;
+            height: 40px;
+            border: 4px solid rgba(255, 255, 255, .2);
+            border-top: 4px solid #38bdf8;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .update {
+            padding: 20px;
+            margin-bottom: 20px;
+            background: rgba(255, 255, 255, .12);
+            border: 1px solid rgb(255, 252, 252);
+            border-radius: 14px;
+            backdrop-filter: blur(12px);
+            color: rgb(0, 255, 149);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+
+            background: linear-gradient(90deg,
+                    #ff0000,
+                    #ff7300,
+                    #ffff00,
+                    #00ff00,
+                    #00ffff,
+                    #008cff,
+                    #7a00ff,
+                    #ff00c8,
+                    #ff0000);
+
+            background-size: 400% 100%;
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+
+            animation: rgbTitle 6s linear infinite;
+
+            text-shadow:
+                0 0 10px rgba(255, 0, 255, 0.5),
+                0 0 20px rgba(0, 255, 255, 0.4),
+                0 0 40px rgba(0, 128, 255, 0.3);
+        }
+
+        @keyframes rgbTitle {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+
+            background: linear-gradient(90deg,
+                    #ff0000,
+                    #ff7300,
+                    #ffff00,
+                    #00ff00,
+                    #00ffff,
+                    #008cff,
+                    #7a00ff,
+                    #ff00c8,
+                    #ff0000);
+
+            background-size: 400% 100%;
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+
+            animation: rgbTitle 6s linear infinite;
+
+            text-shadow:
+                0 0 10px rgba(255, 0, 255, 0.5),
+                0 0 20px rgba(0, 255, 255, 0.4),
+                0 0 40px rgba(0, 128, 255, 0.3);
+        }
+
+        @keyframes rgbTitle {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
     </style>
 </head>
 
 <body>
+    <div id="loading-screen">
+        <div class="loader"></div>
+        <p>Loading...</p>
+    </div>
 
     <section class="hero">
 
+        <div class="announcement">
+            🔔 <strong>ประกาศ:</strong> เว็บไซต์มีการอัปเดตใหม่!
+        </div>
+
         <h1>Roblox Script Lua Free</h1>
+
+
 
         <div class="hero-buttons">
 
@@ -327,15 +476,45 @@
         </div>
 
 
+        <div class="container">
 
+            <h1>Website Updates</h1>
+
+            <div class="update">
+                <h2>🚀 Version 1.1</h2>
+                <p>📅 17/08/2026</p>
+
+                <p>
+                    + เพิ่ม Termux<br>
+                    + เพิ่ม Spck Editor<br>
+                    + ปรับปรุงการแสดงผลบนมือถือ<br>
+                    + เพิ่มระบบประกาศ
+                </p>
+            </div>
+
+            <div class="update">
+                <h2>🚀 Version 1.0</h2>
+                <p>📅 16/08/2026</p>
+
+                <p>
+                    เปิดตัวเว็บไซต์ Roblox Script Lua Free
+                </p>
+            </div>
+
+
+
+        </div>
 
 
     </main>
 
     <script>
-
+        window.addEventListener("load", function () {
+            setTimeout(function () {
+                document.getElementById("loading-screen").style.display = "none";
+            }, 1000);
+        });
     </script>
-
 </body>
 
 </html>
