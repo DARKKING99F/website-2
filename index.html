@@ -170,9 +170,66 @@
             box-shadow: 0 0 20px #bcfd0a9c;
         }
 
-        @media(max-width:700px) {
+        @media (max-width: 700px) {
+            .hero {
+                padding: 50px 15px;
+            }
+
             .hero h1 {
                 font-size: 35px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            .hero-buttons {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+                width: 100%;
+                max-width: 500px;
+                margin: auto;
+            }
+
+            .hero-btn {
+                width: 100%;
+                min-width: 0;
+                padding: 12px 8px;
+                font-size: 14px;
+            }
+
+            /* ปุ่มที่ 5 ให้อยู่เต็มแถว */
+            .hero-buttons .new-row {
+                display: none;
+            }
+
+            .hero-buttons a:last-child {
+                grid-column: 1 / -1;
+            }
+
+            main {
+                padding: 0 12px 50px;
+            }
+
+            .content {
+                width: 100%;
+                margin: 30px auto 10px;
+            }
+
+            h2 {
+                font-size: 19px;
+            }
+
+            .box {
+                width: auto;
+                margin-bottom: 25px;
+                padding: 14px;
+            }
+
+            .box a {
+                font-size: 13px;
+                word-break: break-all;
             }
         }
 
@@ -226,8 +283,9 @@
             <div class="new-row"></div>
 
             <!-- ปุ่มที่ 5 -->
-            <a href="https://play.google.com/store/apps/details?id=com.tykeji.ugphone&referrer=adjust_reftag%3DckMce5D6Qg8Ec%26utm_source%3D%25E5%25AE%2598%25E7%25BD%2591%2BGooogle%2BPlay%26utm_campaign%3DGooogle%2BPlay" class="hero-btn" target="_blank" rel="noopener noreferrer">
-              โปรแกรมจำลอง Android
+            <a href="https://play.google.com/store/apps/details?id=com.tykeji.ugphone&referrer=adjust_reftag%3DckMce5D6Qg8Ec%26utm_source%3D%25E5%25AE%2598%25E7%25BD%2591%2BGooogle%2BPlay%26utm_campaign%3DGooogle%2BPlay"
+                class="hero-btn" target="_blank" rel="noopener noreferrer">
+                โปรแกรมจำลอง Android
             </a>
 
         </div>
