@@ -10,7 +10,7 @@
     <style>
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
+            font-family: 'Silkscreen', cursive;
             background: linear-gradient(135deg,
                     #020617 0%,
                     #1e3a8a 30%,
@@ -23,6 +23,13 @@
             width: 90%;
             max-width: 900px;
             margin: 40px auto 10px;
+
+        }
+
+        .category-title h1 {
+            color: #00ff88;
+            text-shadow: 0 0 10px #00ff88;
+            animation: none;
         }
 
         h2 {
@@ -197,6 +204,7 @@
                 min-width: 0;
                 padding: 12px 8px;
                 font-size: 14px;
+
             }
 
             /* ปุ่มที่ 5 ให้อยู่เต็มแถว */
@@ -259,7 +267,7 @@
             padding: 15px;
             box-sizing: border-box;
             background: rgba(255, 255, 255, 0.12);
-            border: 1px solid rgba(255, 255, 255, 0.2);
+            border: 1px solid rgb(255, 252, 252);
             border-radius: 12px;
             color: white;
             text-align: center;
@@ -357,10 +365,7 @@
                     #ffff00,
                     #00ff00,
                     #00ffff,
-                    #008cff,
-                    #7a00ff,
-                    #ff00c8,
-                    #ff0000);
+                );
 
             background-size: 400% 100%;
             background-clip: text;
@@ -369,8 +374,7 @@
 
             animation: rgbTitle 6s linear infinite;
 
-            text-shadow:
-                0 0 10px rgba(255, 0, 255, 0.5),
+            text-shadow: 0 0 10px rgba(255, 0, 255, 0.5),
                 0 0 20px rgba(0, 255, 255, 0.4),
                 0 0 40px rgba(0, 128, 255, 0.3);
         }
@@ -400,7 +404,7 @@
     <section class="hero">
 
         <div class="announcement">
-            🔔 <strong>ประกาศ:</strong> เว็บไซต์มีการอัปเดตใหม่!
+            <strong>ประกาศ:</strong> เว็บไซต์มีการอัปเดตใหม่
         </div>
 
         <h1>Roblox Script Lua Free</h1>
@@ -443,8 +447,13 @@
 
     <main>
 
+        <!-- หมวดหมู่ -->
+        <div class="category-title">
+            <h1>แอปเขียนโค้ดบนมือถือ</h1>
+        </div>
+
         <div class="content">
-            <h2>1. AppเขียนCode Website บนมือถือ - Code Editor</h2>
+            <h2>1. App เขียน Code Website บนมือถือ - Code Editor</h2>
         </div>
 
         <div class="box">
@@ -453,9 +462,8 @@
             </a>
         </div>
 
-
         <div class="content">
-            <h2>2. Appterminal บนมือถือ - Termux</h2>
+            <h2>2. App Terminal บนมือถือ - Termux</h2>
         </div>
 
         <div class="box">
@@ -465,8 +473,7 @@
         </div>
 
         <div class="content">
-            <h2>3. AppเขียนCodeได้หลายภาษาบนมือถือ - Spck Editor
-            </h2>
+            <h2>3. App เขียน Code ได้หลายภาษาบนมือถือ - Spck Editor</h2>
         </div>
 
         <div class="box">
@@ -475,14 +482,60 @@
             </a>
         </div>
 
+        <div class="category-title">
+            <h1>AI สำหรับ Code</h1>
+        </div>
+
+        <div class="content">
+            <h2>1.Claude ฟรี</h2>
+        </div>
+
+        <div class="box">
+            <a href="https://play.google.com/store/apps/details?id=com.anthropic.claude" target="_blank">
+                Dowload ai Claude
+            </a>
+        </div>
+
+        <div class="content">
+            <h2>2.CHAT GPT</h2>
+        </div>
+
+        <div class="box">
+            <a href="https://play.google.com/store/apps/details?id=com.openai.chatgpt" target="_blank">
+                Dowload ai CHAT GPT 
+            </a>
+        </div>
+
+        <div class="content">
+            <h2>3.DeepSeek</h2>
+        </div>
+
+        <div class="box">
+            <a href="https://play.google.com/store/search?q=deepseek&c=apps" target="_blank">
+                Dowload ai DeepSeek
+            </a>
+        </div>
+
+          <div class="content">
+            <h2>4.Gemini</h2>
+        </div>
+
+        <div class="box">
+            <a href="https://play.google.com/store/search?q=gemini&c=apps" target="_blank">
+                Dowload ai Gemini 
+            </a>
+        </div>
+
+
+ 
 
         <div class="container">
 
             <h1>Website Updates</h1>
 
             <div class="update">
-                <h2>🚀 Version 1.1</h2>
-                <p>📅 17/08/2026</p>
+                <h2> Version 1.1</h2>
+                <p> 17/08/2026</p>
 
                 <p>
                     + เพิ่ม Termux<br>
@@ -493,8 +546,8 @@
             </div>
 
             <div class="update">
-                <h2>🚀 Version 1.0</h2>
-                <p>📅 16/08/2026</p>
+                <h2> Version 1.0</h2>
+                <p> 16/08/2026</p>
 
                 <p>
                     เปิดตัวเว็บไซต์ Roblox Script Lua Free
