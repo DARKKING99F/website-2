@@ -1,21 +1,23 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Roblox Script Lua Free</title>
+    <title>DARKKING Website</title>
 
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@400;600;700&display=swap');
         body {
             margin: 0;
-            font-family: 'Silkscreen', cursive;
-            background: linear-gradient(135deg,
-                    #020617 0%,
-                    #1e3a8a 30%,
-                    #4f46e5 65%,
-                    #38bdf8 100%);
+            font-family: 'Sarabun', sans-serif;
+            background: linear-gradient(
+                135deg,
+                #020617 0%,
+                #1e3a8a 30%,
+                #4f46e5 65%,
+                #38bdf8 100%
+            );
             min-height: 100vh;
         }
 
@@ -23,7 +25,6 @@
             width: 90%;
             max-width: 900px;
             margin: 40px auto 10px;
-
         }
 
         .category-title h1 {
@@ -40,7 +41,6 @@
         }
 
         .box {
-            display: block;
             width: 90%;
             max-width: 900px;
             margin: 0 auto 40px;
@@ -51,12 +51,9 @@
             border-radius: 14px;
         }
 
-        .box p {
-            margin: 0;
-            color: #fff;
-            font-family: Consolas, monospace;
-            font-size: 15px;
-            word-break: break-all;
+        .box a {
+            color: rgb(2, 247, 255);
+            text-decoration: none;
         }
 
         .hero {
@@ -69,16 +66,18 @@
             font-size: 48px;
             margin-bottom: 15px;
 
-            background: linear-gradient(90deg,
-                    #ff0000,
-                    #ff7300,
-                    #ffff00,
-                    #00ff00,
-                    #00ffff,
-                    #008cff,
-                    #7a00ff,
-                    #ff00c8,
-                    #ff0000);
+            background: linear-gradient(
+                90deg,
+                #ff0000,
+                #ff7300,
+                #ffff00,
+                #00ff00,
+                #00ffff,
+                #008cff,
+                #7a00ff,
+                #ff00c8,
+                #ff0000
+            );
 
             background-size: 400% 100%;
             background-clip: text;
@@ -107,11 +106,6 @@
             }
         }
 
-        .hero p {
-            color: #d7e7ff;
-            font-size: 20px;
-        }
-
         main {
             max-width: 1200px;
             margin: auto;
@@ -132,7 +126,6 @@
             font-weight: bold;
             transition: .3s;
             cursor: pointer;
-            margin-top: 0;
         }
 
         .hero-btn:hover {
@@ -152,15 +145,6 @@
             height: 0;
         }
 
-        .getkey-btn {
-            background: #ef4444;
-            margin-top: 0;
-        }
-
-        .getkey-btn:hover {
-            box-shadow: 0 0 20px #ef4444;
-        }
-
         .topup-btn {
             background: #f97316;
         }
@@ -177,72 +161,6 @@
             box-shadow: 0 0 20px #bcfd0a9c;
         }
 
-        @media (max-width: 700px) {
-            .hero {
-                padding: 50px 15px;
-            }
-
-            .hero h1 {
-                font-size: 35px;
-            }
-
-            .hero p {
-                font-size: 16px;
-            }
-
-            .hero-buttons {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                gap: 10px;
-                width: 100%;
-                max-width: 500px;
-                margin: auto;
-            }
-
-            .hero-btn {
-                width: 100%;
-                min-width: 0;
-                padding: 12px 8px;
-                font-size: 14px;
-
-            }
-
-            /* ปุ่มที่ 5 ให้อยู่เต็มแถว */
-            .hero-buttons .new-row {
-                display: none;
-            }
-
-            .hero-buttons a:last-child {
-                grid-column: 1 / -1;
-            }
-
-            main {
-                padding: 0 12px 50px;
-            }
-
-            .content {
-                width: 100%;
-                margin: 30px auto 10px;
-            }
-
-            h2 {
-                font-size: 19px;
-            }
-
-            .box {
-                width: auto;
-                margin-bottom: 25px;
-                padding: 14px;
-            }
-
-            .box a {
-                font-size: 13px;
-                word-break: break-all;
-            }
-        }
-
-
-
         @keyframes fadeIn {
             from {
                 opacity: 0;
@@ -253,11 +171,6 @@
                 opacity: 1;
                 transform: translateY(0);
             }
-        }
-
-        .box a {
-            color: rgb(2, 247, 255);
-            text-decoration: none;
         }
 
         .announcement {
@@ -302,152 +215,123 @@
             }
         }
 
-        .update {
-            padding: 20px;
-            margin-bottom: 20px;
-            background: rgba(255, 255, 255, .12);
-            border: 1px solid rgb(255, 252, 252);
-            border-radius: 14px;
-            backdrop-filter: blur(12px);
-            color: rgb(0, 255, 149);
-        }
+        /* Mobile */
+        @media (max-width: 700px) {
 
-        h1 {
-            text-align: center;
-            margin-bottom: 30px;
-
-            background: linear-gradient(90deg,
-                    #ff0000,
-                    #ff7300,
-                    #ffff00,
-                    #00ff00,
-                    #00ffff,
-                    #008cff,
-                    #7a00ff,
-                    #ff00c8,
-                    #ff0000);
-
-            background-size: 400% 100%;
-            background-clip: text;
-            -webkit-background-clip: text;
-            color: transparent;
-
-            animation: rgbTitle 6s linear infinite;
-
-            text-shadow:
-                0 0 10px rgba(255, 0, 255, 0.5),
-                0 0 20px rgba(0, 255, 255, 0.4),
-                0 0 40px rgba(0, 128, 255, 0.3);
-        }
-
-        @keyframes rgbTitle {
-            0% {
-                background-position: 0% 50%;
+            .hero {
+                padding: 50px 15px;
             }
 
-            50% {
-                background-position: 100% 50%;
+            .hero h1 {
+                font-size: 35px;
             }
 
-            100% {
-                background-position: 0% 50%;
-            }
-        }
-
-
-        h1 {
-            text-align: center;
-            margin-bottom: 30px;
-
-            background: linear-gradient(90deg,
-                    #ff0000,
-                    #ff7300,
-                    #ffff00,
-                    #00ff00,
-                    #00ffff,
-                );
-
-            background-size: 400% 100%;
-            background-clip: text;
-            -webkit-background-clip: text;
-            color: transparent;
-
-            animation: rgbTitle 6s linear infinite;
-
-            text-shadow: 0 0 10px rgba(255, 0, 255, 0.5),
-                0 0 20px rgba(0, 255, 255, 0.4),
-                0 0 40px rgba(0, 128, 255, 0.3);
-        }
-
-        @keyframes rgbTitle {
-            0% {
-                background-position: 0% 50%;
+            .hero-buttons {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+                width: 100%;
+                max-width: 500px;
+                margin: auto;
             }
 
-            50% {
-                background-position: 100% 50%;
+            .hero-btn {
+                width: 100%;
+                min-width: 0;
+                padding: 12px 8px;
+                font-size: 14px;
             }
 
-            100% {
-                background-position: 0% 50%;
+            /* ปุ่มสุดท้ายเต็มแถว */
+            .hero-buttons a:last-child {
+                grid-column: 1 / -1;
+            }
+
+            main {
+                padding: 0 12px 50px;
+            }
+
+            .content {
+                width: 100%;
+                margin: 30px auto 10px;
+            }
+
+            h2 {
+                font-size: 19px;
+            }
+
+            .box {
+                width: auto;
+                margin-bottom: 25px;
+                padding: 14px;
+            }
+
+            .box a {
+                font-size: 13px;
+                word-break: break-all;
             }
         }
     </style>
 </head>
 
 <body>
+
+    <!-- Loading Screen -->
     <div id="loading-screen">
         <div class="loader"></div>
         <p>Loading...</p>
     </div>
 
+    <!-- Hero -->
     <section class="hero">
 
         <div class="announcement">
-            <strong>ประกาศ:</strong> เว็บไซต์มีการอัปเดตใหม่ 19/08/2026 
+            <strong>ประกาศ:</strong>
+            เว็บไซต์มีการอัปเดตใหม่ 19/08/2026
         </div>
 
         <h1>DARKKING Website</h1>
 
-
-
         <div class="hero-buttons">
 
-            <a href="https://www.mediafire.com/folder/02b5lzwoo7bpq/All+Executer" class="hero-btn" target="_blank"
+            <a href="https://www.mediafire.com/folder/02b5lzwoo7bpq/All+Executer"
+                class="hero-btn"
+                target="_blank"
                 rel="noopener noreferrer">
                 Download ตัวรันมือถือ
             </a>
 
-            <a href="https://discord.gg/ej4rPPzDPQ" class="hero-btn getkey-btn" target="_blank"
-                rel="noopener noreferrer">
-                Discord หาคีย์ตัวรัน
-            </a>
-
-            <a href="https://discord.com/invite/maruhub" class="hero-btn buymaru-btn" target="_blank"
+            <a href="https://discord.com/invite/maruhub"
+                class="hero-btn buymaru-btn"
+                target="_blank"
                 rel="noopener noreferrer">
                 ซื้อ Script maru
             </a>
 
-            <a href="https://khanthep.in.th/" class="hero-btn topup-btn" target="_blank" rel="noopener noreferrer">
+            <a href="https://khanthep.in.th/"
+                class="hero-btn topup-btn"
+                target="_blank"
+                rel="noopener noreferrer">
                 แหล่งเติมเกมถูกๆ
             </a>
 
             <!-- บังคับขึ้นบรรทัดใหม่ -->
             <div class="new-row"></div>
 
-            <!-- ปุ่มที่ 5 -->
-            <a href="https://play.google.com/store/apps/details?id=com.tykeji.ugphone&referrer=adjust_reftag%3DckMce5D6Qg8Ec%26utm_source%3D%25E5%25AE%2598%25E7%25BD%2591%2BGooogle%2BPlay%26utm_campaign%3DGooogle%2BPlay"
-                class="hero-btn" target="_blank" rel="noopener noreferrer">
+            <a href="https://play.google.com/store/apps/details?id=com.tykeji.ugphone&referrer=adjust_reftag%3DckMce5D6Qg8Ec%26utm_source%3D%25E5%25AE%2598%25E7%BD%91%2BGooogle%2BPlay%26utm_campaign%3DGooogle%2BPlay"
+                class="hero-btn"
+                target="_blank"
+                rel="noopener noreferrer">
                 โปรแกรมจำลอง Android
             </a>
 
         </div>
-
     </section>
 
     <main>
 
-        <!-- หมวดหมู่ -->
+        <!-- ==================== แอปเขียนโค้ด ==================== -->
+
         <div class="category-title">
             <h1>แอปเขียนโค้ดบนมือถือ</h1>
         </div>
@@ -457,7 +341,8 @@
         </div>
 
         <div class="box">
-            <a href="https://liteapks.com/code-editor-compiler-ide.html" target="_blank">
+            <a href="https://liteapks.com/code-editor-compiler-ide.html"
+                target="_blank">
                 https://liteapks.com/code-editor-compiler-ide.html
             </a>
         </div>
@@ -467,7 +352,8 @@
         </div>
 
         <div class="box">
-            <a href="https://play.google.com/store/apps/details?id=com.termux" target="_blank">
+            <a href="https://play.google.com/store/apps/details?id=com.termux"
+                target="_blank">
                 https://play.google.com/store/apps/details?id=com.termux
             </a>
         </div>
@@ -477,59 +363,73 @@
         </div>
 
         <div class="box">
-            <a href="https://play.google.com/store/apps/details?id=io.spck" target="_blank">
+            <a href="https://play.google.com/store/apps/details?id=io.spck"
+                target="_blank">
                 https://play.google.com/store/apps/details?id=io.spck
             </a>
         </div>
 
+        <div class="content">
+            <h2>4. App เขียน Code Python บนมือถือ - Pydroid 3</h2>
+        </div>
+
+        <div class="box">
+            <a href="https://play.google.com/store/apps/details?id=ru.iiec.pydroid3"
+                target="_blank">
+                https://play.google.com/store/apps/details?id=ru.iiec.pydroid3
+            </a>
+        </div>
+
+
+        <!-- ==================== AI ช่วยเขียน Code ==================== -->
+
         <div class="category-title">
-            <h1>AI สำหรับ Code</h1>
+            <h1>AI ช่วยเขียน Code</h1>
         </div>
 
         <div class="content">
-            <h2>1.Claude ฟรี</h2>
+            <h2>1. Claude ฟรี</h2>
         </div>
 
         <div class="box">
-            <a href="https://play.google.com/store/apps/details?id=com.anthropic.claude" target="_blank">
-                Dowload ai Claude
-            </a>
-        </div>
-
-        <div class="content">
-            <h2>2.CHAT GPT</h2>
-        </div>
-
-        <div class="box">
-            <a href="https://play.google.com/store/apps/details?id=com.openai.chatgpt" target="_blank">
-                Dowload ai CHAT GPT 
+            <a href="https://play.google.com/store/apps/details?id=com.anthropic.claude"
+                target="_blank">
+                Download AI Claude
             </a>
         </div>
 
         <div class="content">
-            <h2>3.DeepSeek</h2>
+            <h2>2. ChatGPT</h2>
         </div>
 
         <div class="box">
-            <a href="https://play.google.com/store/search?q=deepseek&c=apps" target="_blank">
-                Dowload ai DeepSeek
+            <a href="https://play.google.com/store/apps/details?id=com.openai.chatgpt"
+                target="_blank">
+                Download AI ChatGPT
             </a>
         </div>
 
-          <div class="content">
-            <h2>4.Gemini</h2>
+        <div class="content">
+            <h2>3. DeepSeek</h2>
         </div>
 
         <div class="box">
-            <a href="https://play.google.com/store/search?q=gemini&c=apps" target="_blank">
-                Dowload ai Gemini 
+            <a href="https://play.google.com/store/search?q=deepseek&c=apps"
+                target="_blank">
+                Download AI DeepSeek
             </a>
         </div>
 
+        <div class="content">
+            <h2>4. Gemini</h2>
+        </div>
 
- 
-
-    
+        <div class="box">
+            <a href="https://play.google.com/store/search?q=gemini&c=apps"
+                target="_blank">
+                Download AI Gemini
+            </a>
+        </div>
 
     </main>
 
@@ -540,7 +440,7 @@
             }, 1000);
         });
     </script>
+
 </body>
 
-</html>
-```
+</html> 
